@@ -1,0 +1,8 @@
+<apex:page standardController="Naidu__c" docType="html-5.0">
+<apex:form >
+ 
+
+
+<apex:input label="Label Text"></apex:input>  
+</apex:form>
+</apex:page>

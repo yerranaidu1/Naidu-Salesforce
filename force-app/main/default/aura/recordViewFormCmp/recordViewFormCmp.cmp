@@ -1,0 +1,20 @@
+<aura:component>
+    <lightning:card title="Contact details">
+        <lightning:recordViewForm recordId="003Dm000003uTBVIA2" objectApiName="Contact">
+        <div class="slds-box">
+            <lightning:outputField fieldName="Name" />
+            <lightning:outputField fieldName="Birthdate" />
+            <lightning:outputField fieldName="Phone" />
+            <lightning:outputField fieldName="LeadSource" />
+        </div>
+        </lightning:recordViewForm>
+    </lightning:card>
+    <lightning:card>
+    <lightning:select name="sname" label="Student name?" required="true">
+        <option value="naidu">naidu</option>
+        <option value="bhavyan">bhavyan</option>
+        <option value="suresh">suresh</option>
+        <option value="ganesh">ganesh</option>
+    </lightning:select>
+    </lightning:card>
+</aura:component>

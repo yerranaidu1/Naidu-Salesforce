@@ -1,0 +1,28 @@
+<aura:component >
+	<lightning:card title="Dependent Picklist Demo">
+        <!-- Controller Field -->
+        <lightning:layoutItem size="12" padding="around-small">    
+            <lightning:select name="parentField" aura:id="parentField"
+                              value="{!v.parentValue}"
+                              label="{!v.parentFieldLabel}"
+                              onchange="{!c.parentFieldChange}">
+                <aura:iteration items="{!v.parentList}" var="value">
+                    <option value="{!value}">{!value}</option>
+                </aura:iteration>
+            </lightning:select>
+        </lightning:layoutItem>
+        
+        <!--Dependent Field-->
+        <lightning:layoutItem size="12" padding="around-small">
+            <lightning:select name="childField"
+                              value="{!v.childValue}"
+                              label="{!v.childFieldLabel}"
+                              disabled="{!v.disabledChildField}">
+                <aura:iteration items="{!v.childList}" var="value">
+                    <option value="{!value}">{!value}</option>
+                </aura:iteration>
+            </lightning:select>
+        </lightning:layoutItem>
+    </lightning:card> 
+ 
+</aura:component>
