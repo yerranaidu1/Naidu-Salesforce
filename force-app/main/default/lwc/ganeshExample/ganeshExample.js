@@ -1,6 +1,7 @@
-import { LightningElement, wire } from 'lwc';
+import { LightningElement, wire, api} from 'lwc';
 import contactPagination from '@salesforce/apex/ReadContactPagination.contactPagination';
 export default class GaneshExample extends LightningElement {
+@api name='Naidu Yerra New Changes';
  totalContacts
  @wire(contactPagination)
       getAllContacts({data,error}){
